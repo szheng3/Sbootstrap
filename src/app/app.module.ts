@@ -5,12 +5,14 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BasicTypographyComponent} from './basic-typography/basic-typography.component';
 import {LoadScriptDirectiveDirective} from './load-script-directive.directive';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BasicTypographyComponent,
     LoadScriptDirectiveDirective,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
