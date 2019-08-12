@@ -9,6 +9,9 @@ import {LoadScriptDirectiveDirective} from './load-script-directive.directive';
 import { HomesectionComponent } from './homesection/homesection.component';
 import { ExploresectionComponent } from './exploresection/exploresection.component';
 import { ImagesectionComponent } from './imagesection/imagesection.component';
+import { SharesectionComponent } from './sharesection/sharesection.component';
+import { ProfilesectionComponent } from './profilesection/profilesection.component';
+import { FootsectionComponent } from './footsection/footsection.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { ImagesectionComponent } from './imagesection/imagesection.component';
     HomesectionComponent,
     ExploresectionComponent,
     ImagesectionComponent,
+    SharesectionComponent,
+    ProfilesectionComponent,
+    FootsectionComponent,
   ],
   imports: [
     BrowserModule,
