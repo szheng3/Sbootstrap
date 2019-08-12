@@ -1,5 +1,4 @@
 $('#year').text(new Date().getFullYear());
-$('body').scrollspy({ target: '#main-nav' });
 // Smooth Scrolling
 $("#main-nav a").on('click', function (event) {
   if (this.hash !== "") {

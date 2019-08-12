@@ -1,10 +1,9 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {BasicTypographyComponent} from 'src/app/basic-typography/basic-typography.component';
 
 const routes: Routes = [
   {
-    path: 'basic-typography', component: BasicTypographyComponent,
+    path: 'looplab', loadChildren: './looplab/looplab.module#LooplabModule',
   },
 ];
 

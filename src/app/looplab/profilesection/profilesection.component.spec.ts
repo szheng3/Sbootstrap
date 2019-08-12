@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FootsectionComponent } from './footsection.component';
+import { ProfilesectionComponent } from 'src/app/looplab/profilesection/profilesection.component';
 
-describe('FootsectionComponent', () => {
-  let component: FootsectionComponent;
-  let fixture: ComponentFixture<FootsectionComponent>;
+describe('ProfilesectionComponent', () => {
+  let component: ProfilesectionComponent;
+  let fixture: ComponentFixture<ProfilesectionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FootsectionComponent ]
+      declarations: [ ProfilesectionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FootsectionComponent);
+    fixture = TestBed.createComponent(ProfilesectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

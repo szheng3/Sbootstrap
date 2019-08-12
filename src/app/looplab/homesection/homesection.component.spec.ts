@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ExploresectionComponent } from './exploresection.component';
+import { HomesectionComponent } from 'src/app/looplab/homesection/homesection.component';
 
-describe('ExploresectionComponent', () => {
-  let component: ExploresectionComponent;
-  let fixture: ComponentFixture<ExploresectionComponent>;
+describe('HomesectionComponent', () => {
+  let component: HomesectionComponent;
+  let fixture: ComponentFixture<HomesectionComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExploresectionComponent ]
+      declarations: [ HomesectionComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ExploresectionComponent);
+    fixture = TestBed.createComponent(HomesectionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
