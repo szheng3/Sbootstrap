@@ -7,6 +7,8 @@ import {BasicTypographyComponent} from './basic-typography/basic-typography.comp
 import {HeaderComponent} from './header/header.component';
 import {LoadScriptDirectiveDirective} from './load-script-directive.directive';
 import { HomesectionComponent } from './homesection/homesection.component';
+import { ExploresectionComponent } from './exploresection/exploresection.component';
+import { ImagesectionComponent } from './imagesection/imagesection.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { HomesectionComponent } from './homesection/homesection.component';
     HeaderComponent,
     LoadScriptDirectiveDirective,
     HomesectionComponent,
+    ExploresectionComponent,
+    ImagesectionComponent,
   ],
   imports: [
     BrowserModule,
