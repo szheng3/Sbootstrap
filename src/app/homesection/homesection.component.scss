@@ -1,0 +1,35 @@
+#home-section {
+  //background-image: ;
+  background: url("/assets/pexels-photo-414612.jpeg") no-repeat fixed;
+  min-height: 700px;
+  background-size: cover;
+  //width: 100%;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 700px;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.home-inner {
+  margin-top: 100px;
+}
+
+.card-form {
+  opacity: 0.8;
+}
+
+.fa-check {
+  color: #008ed6;
+  background-color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+//.home-inner{
+//  //margin-top: 100px;
+//}
