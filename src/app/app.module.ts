@@ -11,13 +11,15 @@ import { IndexComponent } from './index/index.component';
   declarations: [
     AppComponent,
     BasicTypographyComponent,
-    LoadScriptDirectiveDirective,
     IndexComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule],
+    AppRoutingModule
+  ],
   providers: [],
   bootstrap: [AppComponent],
+  exports: [
+  ],
 })
 export class AppModule {}

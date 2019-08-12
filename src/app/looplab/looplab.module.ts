@@ -10,6 +10,9 @@ import {ProfilesectionComponent} from 'src/app/looplab/profilesection/profilesec
 import {FootsectionComponent} from 'src/app/looplab/footsection/footsection.component';
 import {HeaderComponent} from 'src/app/looplab/header/header.component';
 import { LooplabComponent } from './looplab.component';
+import {AppModule} from 'src/app/app.module';
+import {LoadScriptDirectiveDirective} from 'src/app/load-script-directive.directive';
+import {ShareModule} from 'src/app/share.module';
 
 
 @NgModule({
@@ -21,11 +24,12 @@ import { LooplabComponent } from './looplab.component';
     ProfilesectionComponent,
     FootsectionComponent,
     HeaderComponent,
-    LooplabComponent,
+    LooplabComponent
   ],
   imports: [
     CommonModule,
-    LooplabRoutingModule
-  ]
+    ShareModule,
+    LooplabRoutingModule,
+  ],
 })
 export class LooplabModule { }

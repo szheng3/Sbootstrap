@@ -10,11 +10,11 @@ import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 export class LooplabComponent implements OnDestroy {
 
   constructor() {
-    document.body.className = 'bg';
+    document.body.classList.add('bg');
   }
 
   ngOnDestroy() {
-    document.body.className = '';
+    document.body.classList.remove('bg');
   }
 
 }
