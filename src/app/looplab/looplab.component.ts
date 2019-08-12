@@ -1,16 +1,20 @@
-import {Component, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-looplab',
   templateUrl: './looplab.component.html',
   encapsulation: ViewEncapsulation.None,
-  styleUrls: ['./looplab.component.scss']
+
+  styleUrls: ['./looplab.component.scss'],
 })
-export class LooplabComponent implements OnInit {
+export class LooplabComponent implements OnDestroy {
 
-  constructor() { }
+  constructor() {
+    document.body.className = 'bg';
+  }
 
-  ngOnInit() {
+  ngOnDestroy() {
+    document.body.className = '';
   }
 
 }

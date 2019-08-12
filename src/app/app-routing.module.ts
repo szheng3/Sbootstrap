@@ -9,6 +9,9 @@ const routes: Routes = [
   {
     path: 'looplab', loadChildren: './looplab/looplab.module#LooplabModule',
   },
+  {
+    path: 'book', loadChildren: './book/book.module#BookModule',
+  },
 ];
 
 @NgModule({
