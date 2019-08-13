@@ -1,0 +1,10 @@
+@import "../book.component";
+
+.primary-card {
+  background-color: $primary;
+}
+
+.primary-outline-card {
+  border: $primary 1px solid;
+  color: $primary;
+}
