@@ -3,16 +3,17 @@
 //noinspection ALL
 #home {
   background: url('/assets/img/mountains.jpg') no-repeat fixed;
-  min-height: 700px;
+  height: 600px;
+  margin-top: 66px;
 
 }
 
 .primary-overlay {
   position: absolute;
-  top: 0;
+  top: 66px;
   left: 0;
   right: 0;
-  min-height: 700px;
+  height: 600px;
   background-color: $primary;
   opacity: 0.8;
 }

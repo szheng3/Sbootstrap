@@ -5,10 +5,12 @@ import { BookRoutingModule } from './book-routing.module';
 import { BookComponent } from './book.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
+import { CardComponent } from './card/card.component';
 
 
 @NgModule({
-  declarations: [BookComponent, HeaderComponent, HomeComponent],
+  declarations: [BookComponent, HeaderComponent, HomeComponent, ContactComponent, CardComponent],
   imports: [
     CommonModule,
     BookRoutingModule
