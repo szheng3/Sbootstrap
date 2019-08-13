@@ -11,8 +11,8 @@ import {FootsectionComponent} from 'src/app/looplab/footsection/footsection.comp
 import {HeaderComponent} from 'src/app/looplab/header/header.component';
 import { LooplabComponent } from './looplab.component';
 import {AppModule} from 'src/app/app.module';
-import {LoadScriptDirectiveDirective} from 'src/app/load-script-directive.directive';
-import {ShareModule} from 'src/app/share.module';
+import {LoadScriptDirectiveDirective} from 'src/app/share/load-script-directive.directive';
+import {ShareModule} from 'src/app/share/share.module';
 
 
 @NgModule({
