@@ -10,10 +10,11 @@ import { CardComponent } from './card/card.component';
 import { AboutComponent } from './about/about.component';
 import { MeetComponent } from './meet/meet.component';
 import { TouchComponent } from './touch/touch.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [BookComponent, HeaderComponent, HomeComponent, ContactComponent, CardComponent, AboutComponent, MeetComponent, TouchComponent],
+  declarations: [BookComponent, HeaderComponent, HomeComponent, ContactComponent, CardComponent, AboutComponent, MeetComponent, TouchComponent, FooterComponent],
   imports: [
     CommonModule,
     BookRoutingModule
