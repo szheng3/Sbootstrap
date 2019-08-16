@@ -11,13 +11,15 @@ import { AboutComponent } from './about/about.component';
 import { MeetComponent } from './meet/meet.component';
 import { TouchComponent } from './touch/touch.component';
 import { FooterComponent } from './footer/footer.component';
+import {ShareModule} from 'src/app/share/share.module';
 
 
 @NgModule({
   declarations: [BookComponent, HeaderComponent, HomeComponent, ContactComponent, CardComponent, AboutComponent, MeetComponent, TouchComponent, FooterComponent],
   imports: [
     CommonModule,
-    BookRoutingModule
-  ]
+    BookRoutingModule,
+    ShareModule,
+  ],
 })
 export class BookModule { }
