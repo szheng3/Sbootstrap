@@ -11,8 +11,11 @@ const routes: Routes = [
   },
   {
 
-    // path: 'book', loadChildren: './book/book.module#BookModule',
     path: 'book', loadChildren: () => import('./book/book.module').then(value => value.BookModule),
+  },
+  {
+
+    path: 'glozzom', loadChildren: () => import('./glozzom/glozzom.module').then(value => value.GlozzomModule),
   },
 ];
 
