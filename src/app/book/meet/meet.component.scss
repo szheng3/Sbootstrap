@@ -1,0 +1,17 @@
+@import "../book.component";
+.card-img-top{
+  margin-top: -50px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card:hover{
+  background-color: $primary;
+  color: white;
+}
+.display-4{
+  color: $primary;
+}
+.icon{
+  color: white;
+}
