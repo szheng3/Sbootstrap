@@ -7,7 +7,8 @@ const routes: Routes = [
     path: '', component: IndexComponent,
   },
   {
-    path: 'looplab', loadChildren: './looplab/looplab.module#LooplabModule',
+    // path: 'looplab', loadChildren: './looplab/looplab.module#LooplabModule',
+    path: 'looplab', loadChildren: () => import('./looplab/looplab.module').then(value => value.LooplabModule),
   },
   {
     path: 'book', loadChildren: './book/book.module#BookModule',
