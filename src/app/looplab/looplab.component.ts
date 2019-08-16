@@ -1,4 +1,5 @@
-import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
+import {Component, Inject, OnDestroy, OnInit, PLATFORM_ID, ViewEncapsulation} from '@angular/core';
+import {isPlatformBrowser} from '@angular/common';
 
 @Component({
   selector: 'app-looplab',
@@ -8,13 +9,22 @@ import {Component, OnDestroy, OnInit, ViewEncapsulation} from '@angular/core';
   styleUrls: ['./looplab.component.scss'],
 })
 export class LooplabComponent implements OnDestroy {
+  private isBrowser: boolean;
 
-  constructor() {
-    document.body.classList.add('bg');
+  constructor(@Inject(PLATFORM_ID) platformId) {
+    this.isBrowser = isPlatformBrowser(platformId);
+    if (this.isBrowser) {
+      document.body.classList.add('bg');
+
+    }
+
   }
 
   ngOnDestroy() {
-    document.body.classList.remove('bg');
+    if (this.isBrowser) {
+      document.body.classList.remove('bg');
+
+    }
   }
 
 }
