@@ -1,0 +1,32 @@
+//.carousel-inner {
+//  height: 400px;
+//}
+.carousel-item{
+  color: white;
+}
+
+.center{
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.image-1 {
+  background-image: url("/assets/img/image1.jpg");
+  background-size: cover;
+  height: 400px;
+
+}
+.image-2{
+  background-image: url("/assets/img/image2.jpg");
+  background-size: cover;
+  height: 400px;
+}
+.image-3{
+  background-image: url("/assets/img/image3.jpg");
+  background-size: cover;
+  height: 400px;
+}
