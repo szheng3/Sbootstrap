@@ -1,0 +1,8 @@
+@import "../glozzom.component";
+.ov{
+  @include ellipsis(2);
+}
+.moveTop{
+  margin-top: -50px;
+  margin-bottom: 0;
+}
