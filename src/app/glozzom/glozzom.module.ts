@@ -8,10 +8,11 @@ import {ShareModule} from 'src/app/share/share.module';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ServicesComponent } from './services/services.component';
 import { BlogComponent } from './blog/blog.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 @NgModule({
-  declarations: [GlozzomComponent, HeaderComponent, AboutusComponent, ServicesComponent, BlogComponent],
+  declarations: [GlozzomComponent, HeaderComponent, AboutusComponent, ServicesComponent, BlogComponent, ContactComponent],
   imports: [
     CommonModule,
     ShareModule,
