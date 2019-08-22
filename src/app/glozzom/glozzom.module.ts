@@ -7,10 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import {ShareModule} from 'src/app/share/share.module';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ServicesComponent } from './services/services.component';
+import { BlogComponent } from './blog/blog.component';
 
 
 @NgModule({
-  declarations: [GlozzomComponent, HeaderComponent, AboutusComponent, ServicesComponent],
+  declarations: [GlozzomComponent, HeaderComponent, AboutusComponent, ServicesComponent, BlogComponent],
   imports: [
     CommonModule,
     ShareModule,

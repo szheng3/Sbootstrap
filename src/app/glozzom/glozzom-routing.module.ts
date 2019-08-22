@@ -4,6 +4,7 @@ import {GlozzomComponent} from 'src/app/glozzom/glozzom.component';
 import {HeaderComponent} from 'src/app/glozzom/header/header.component';
 import {AboutusComponent} from 'src/app/glozzom/aboutus/aboutus.component';
 import {ServicesComponent} from 'src/app/glozzom/services/services.component';
+import {BlogComponent} from 'src/app/glozzom/blog/blog.component';
 
 const routes: Routes = [
   {
@@ -19,6 +20,9 @@ const routes: Routes = [
       },
       {
         path: 'services', component: ServicesComponent,
+      },
+      {
+        path: 'blog', component: BlogComponent,
       },
     ],
   },
