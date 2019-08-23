@@ -4,7 +4,6 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BasicTypographyComponent} from './basic-typography/basic-typography.component';
-import {LoadScriptDirectiveDirective} from 'src/app/share/load-script-directive.directive';
 import { IndexComponent } from './index/index.component';
 import {ShareModule} from 'src/app/share/share.module';
 

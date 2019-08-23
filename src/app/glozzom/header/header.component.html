@@ -93,8 +93,17 @@
   <div class="bimage">
     <div class="dark-layout d-flex align-items-center">
       <div class="container text-center text-white">
-        <i class="fa fa-play fa-3x rounded p-1"></i>
-        <h3>See What We Do</h3>
+        <!--        <i class="fa fa-play fa-3x rounded p-1"></i>-->
+        <!--        <h3>See What We Do</h3>-->
+        <!--        <a href="#" class="video" data-video="https://www.youtube.com/embed/HnwsG9a5riA" data-toggle="modal" data-target="#videoModal">-->
+        <!--          <i class="fa fa-play fa-3x"></i>-->
+        <!--        </a>-->
+        <a class="text-white" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-toggle="lightbox">
+          <i class="fa fa-play fa-3x"></i>
+        </a>
+
+
+        <h1>See What We Do</h1>
       </div>
     </div>
   </div>
@@ -110,30 +119,38 @@
         </div>
       </div>
     </div>
-    <div class="row p-3">
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/random/565x565" alt="" class="img-fluid">
-      </div>
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/random/564x564" alt="" class="img-fluid">
-      </div>
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/random/563x563" alt="" class="img-fluid">
-      </div>
-    </div>
 
-    <div class="row p-3">
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/random/560x560" alt="" class="img-fluid">
-      </div>
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/random/561x561" alt="" class="img-fluid">
-      </div>
-      <div class="col-md-4">
-        <img src="https://source.unsplash.com/random/562x562" alt="" class="img-fluid">
-      </div>
+
+    <div class="row justify-content-center mb-4">
+      <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox" data-gallery="example-gallery"
+         class="col-sm-4">
+        <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+      </a>
+      <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery"
+         class="col-sm-4">
+        <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid">
+      </a>
+      <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery"
+         class="col-sm-4">
+        <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid">
+      </a>
+    </div>
+    <div class="row">
+      <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox" data-gallery="example-gallery"
+         class="col-sm-4">
+        <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid">
+      </a>
+      <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox" data-gallery="example-gallery"
+         class="col-sm-4">
+        <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid">
+      </a>
+      <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox" data-gallery="example-gallery"
+         class="col-sm-4">
+        <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid">
+      </a>
     </div>
   </div>
+
 </section>
 <section class="text-center bg-dark text-white p-4">
   <h3>Sign Up For Our Newsletter</h3>
@@ -153,5 +170,19 @@
   </div>
 </section>
 
+<!-- VIDEO MODAL -->
+<div class="modal fade" id="videoModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button class="close" data-dismiss="modal">
+          <span>&times;</span>
+        </button>
+        <iframe src="" frameborder="0" height="350" width="100%" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
 
 
+<!--<a appLoadScriptDirective [script]="'/assets/js/looplab.js'"></a>-->
