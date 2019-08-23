@@ -1,3 +1,13 @@
+$(document).ready(function() {
+    $('section').bootstrapMaterialDesign();
+  },
+);
+
+// Configure Slider
+// $('.carousel').carousel({
+//   interval: 6000,
+//   pause: 'hover'
+// });
 $('#year').text(new Date().getFullYear());
 // Smooth Scrolling
 $('#main-nav a').on('click', function(event) {
@@ -8,25 +18,11 @@ $('#main-nav a').on('click', function(event) {
 
     $('html, body').animate({
       scrollTop: $(hash).offset().top,
-    }, 800,  'swing',function() {
+    }, 800, 'swing', function() {
       // window.location.hash = hash;
     });
   }
 });
-// Lightbox Init
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-  event.preventDefault();
-  $(this).ekkoLightbox();
-});
-
-$(document).ready(function() { $('body').bootstrapMaterialDesign(); });
-
-// Configure Slider
-// $('.carousel').carousel({
-//   interval: 6000,
-//   pause: 'hover'
-// });
-
 // Video Play
 $(function() {
   // Auto play modal video
@@ -41,3 +37,4 @@ $(function() {
     });
   });
 });
+

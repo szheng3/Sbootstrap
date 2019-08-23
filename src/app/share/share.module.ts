@@ -1,12 +1,11 @@
 import {NgModule} from '@angular/core';
 import {LoadScriptDirectiveDirective} from 'src/app/share/load-script-directive.directive';
-import { LibComponent } from 'src/app/share/lib.component';
 
 @NgModule({
-  declarations: [LoadScriptDirectiveDirective, LibComponent],
+  declarations: [LoadScriptDirectiveDirective],
   imports: [],
   exports: [
-    LoadScriptDirectiveDirective, LibComponent
+    LoadScriptDirectiveDirective
   ],
 })
 export class ShareModule {}

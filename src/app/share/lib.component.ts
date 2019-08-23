@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import {AfterViewInit} from '@angular/core';
 
-@Component({
-  selector: 'app-lib',
-  templateUrl: './lib.component.html',
-  styleUrls: ['./lib.scss']
-})
-export class LibComponent implements OnInit {
+declare var $: any;
 
-  constructor() { }
 
-  ngOnInit() {
+export abstract class LibComponent implements AfterViewInit {
+
+
+
+
+  ngAfterViewInit(): void {
+    $.getScript('/assets/js/looplab.js');
+
   }
 
 }

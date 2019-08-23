@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
+import {LibComponent} from 'src/app/share/lib.component';
 
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
   styleUrls: ['./services.component.scss']
 })
-export class ServicesComponent implements OnInit {
+export class ServicesComponent extends LibComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    super();
+  }
 
   ngOnInit() {
   }
