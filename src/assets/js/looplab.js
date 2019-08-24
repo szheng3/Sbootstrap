@@ -9,6 +9,11 @@ $(document).ready(function() {
 //   pause: 'hover'
 // });
 $('#year').text(new Date().getFullYear());
+$('.slider').slick({
+  infinite: true,
+  slideToShow: 1,
+  slideToScroll: 1
+});
 // Smooth Scrolling
 $('#main-nav a').on('click', function(event) {
   if (this.hash !== '') {

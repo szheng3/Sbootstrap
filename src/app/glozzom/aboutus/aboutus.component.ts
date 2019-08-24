@@ -11,6 +11,7 @@ export class AboutusComponent extends LibComponent implements OnInit {
   constructor() {super(); }
 
   ngOnInit() {
+
   }
 
 }
