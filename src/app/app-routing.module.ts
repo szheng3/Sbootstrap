@@ -17,6 +17,10 @@ const routes: Routes = [
 
     path: 'glozzom', loadChildren: () => import('./glozzom/glozzom.module').then(value => value.GlozzomModule),
   },
+  {
+
+    path: 'dashboard', loadChildren: () => import('./dashboard/dashboard.module').then(value => value.DashboardModule),
+  },
 ];
 
 @NgModule({
