@@ -6,6 +6,24 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: DashboardComponent,
+      },
+      {
+        path: 'posts',
+        component: DashboardComponent,
+      },
+      {
+        path: 'categories',
+        component: DashboardComponent,
+      },
+      {
+        path: 'users',
+        component: DashboardComponent,
+      },
+    ],
 
   }];
 
