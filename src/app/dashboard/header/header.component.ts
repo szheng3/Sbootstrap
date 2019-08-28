@@ -1,6 +1,7 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
-import {map, tap} from 'rxjs/operators';
+import {Component, Input, OnInit} from '@angular/core';
+import {ActivatedRoute, NavigationEnd, PRIMARY_OUTLET, Router, RouterStateSnapshot} from '@angular/router';
+import {filter, map, tap} from 'rxjs/operators';
+import {Observable} from 'rxjs';
 
 @Component({
   selector: 'app-header',
@@ -8,13 +9,23 @@ import {map, tap} from 'rxjs/operators';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
+  @Input() url: string;
 
-  constructor(private route: ActivatedRoute) {
-    // this.route.url.pipe(tap(value => console.log(value))).subscribe();
-    // this.route.paramMap.pipe(tap(value => console.log(value))).subscribe();
+  constructor() {
+
+  }
+
+  getColor(url: string) {
+    const factory = {
+      dashboard: 'bg-primary',
+    };
+    return factory[url.toLowerCase()] || 'bg-info';
   }
 
   ngOnInit() {
+    // this.route.pathFromRoot[1].url.subscribe(val => console.log(val[0].path));
+    // this.router.changes.subscribe((val) => /*whatever*/)
+
   }
 
 }
