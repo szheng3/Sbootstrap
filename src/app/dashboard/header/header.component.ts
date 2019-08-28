@@ -18,6 +18,8 @@ export class HeaderComponent implements OnInit {
   getColor(url: string) {
     const factory = {
       dashboard: 'bg-primary',
+      categories: 'bg-warning',
+      users: 'bg-success',
     };
     return factory[url.toLowerCase()] || 'bg-info';
   }

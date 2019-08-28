@@ -1,5 +1,8 @@
 <section class="p-3" [ngClass]="getColor(url)">
-  <div class="container text-white">
-    <h4><i class="fa fa-dashboard mr-2"></i>Dashboard</h4>
+  <div class="container text-white" [ngSwitch]="url">
+    <h4 *ngSwitchCase="'dashboard'"><i class="fa fa-dashboard mr-2"></i>Dashboard</h4>
+    <h4 *ngSwitchCase="'posts'"><i class="fa fa-pencil mr-2"></i>Posts</h4>
+    <h4 *ngSwitchCase="'categories'"><i class="fa fa-folder mr-2"></i>Categories</h4>
+    <h4 *ngSwitchCase="'users'"><i class="fa fa-user mr-2"></i>Users</h4>
   </div>
 </section>
