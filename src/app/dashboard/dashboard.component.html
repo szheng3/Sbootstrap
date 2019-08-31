@@ -1,6 +1,6 @@
-<app-nav></app-nav>
+<app-nav [url]="url$ | async"></app-nav>
 <app-header [url]="url$ | async" ></app-header>
-<app-search></app-search>
-<app-table></app-table>
+<app-search [url]="url$ | async"></app-search>
+<app-table  [url]="url$ | async"></app-table>
 <app-footer></app-footer>
 

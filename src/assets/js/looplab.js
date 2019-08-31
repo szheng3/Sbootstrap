@@ -1,5 +1,10 @@
 $(document).ready(function() {
     $('section').bootstrapMaterialDesign();
+    if (typeof CKEDITOR != 'undefined') {
+      CKEDITOR.replace('myEditor');
+
+    }
+
   },
 );
 
@@ -12,7 +17,7 @@ $('#year').text(new Date().getFullYear());
 $('.slider').slick({
   infinite: true,
   slideToShow: 1,
-  slideToScroll: 1
+  slideToScroll: 1,
 });
 // Smooth Scrolling
 $('#main-nav a').on('click', function(event) {
@@ -22,7 +27,7 @@ $('#main-nav a').on('click', function(event) {
     const hash = this.hash;
 
     $('html, body').animate({
-      scrollTop: $(hash).offset().top,
+      scrollTop: $(hash).offset().top + 10,
     }, 800, 'swing', function() {
       // window.location.hash = hash;
     });

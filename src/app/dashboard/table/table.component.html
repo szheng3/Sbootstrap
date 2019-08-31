@@ -1,72 +1,11 @@
 <section class="mt-4">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-9">
-        <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Latest Posts</h4>
-            <table class="table">
-              <thead class="thead-dark">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-                <th scope="col"></th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-                <td>@twitter</td>
-              </tr>
-
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card bg-info text-white">
-          <div class="card-body d-flex justify-content-center flex-column align-items-center">
-            <h4>Posts</h4>
-            <h3><i class="fa fa-pencil mr-2"></i>6</h3>
-            <button class="btn btn-outline-light">View</button>
-          </div>
-        </div>
-        <div class="card bg-primary text-white mt-3">
-          <div class="card-body d-flex justify-content-center flex-column align-items-center">
-            <h4>Categories</h4>
-            <h3><i class="fa fa-folder mr-2"></i>6</h3>
-            <button class="btn btn-outline-light">View</button>
-          </div>
-        </div>
-        <div class="card bg-success text-white mt-3">
-          <div class="card-body d-flex justify-content-center flex-column align-items-center">
-            <h4>Users</h4>
-            <h3><i class="fa fa-group mr-2"></i>6</h3>
-            <button class="btn btn-outline-light">View</button>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="container" [ngSwitch]="url">
+    <app-main-table *ngSwitchCase="'dashboard'"></app-main-table>
+    <app-post-table *ngSwitchCase="'posts'"></app-post-table>
+    <app-categories-table *ngSwitchCase="'categories'"></app-categories-table>
+    <app-users-table *ngSwitchCase="'users'"></app-users-table>
+    <app-login *ngSwitchCase="'login'"></app-login>
+    <app-profile-table *ngSwitchCase="'profile'"></app-profile-table>
   </div>
 
 </section>

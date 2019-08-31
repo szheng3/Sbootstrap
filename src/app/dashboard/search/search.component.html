@@ -1,6 +1,6 @@
 <section class="bg-light text-white">
-  <div class="container">
-    <div class="row p-4">
+  <div class="container" [ngSwitch]="url">
+    <div class="row p-4" *ngSwitchCase="'dashboard'">
       <div class="col">
         <button class="btn btn-primary btn-raised btn-block"><i class="fa fa-plus mr-2"></i>Add Post</button>
       </div>
@@ -9,6 +9,42 @@
       </div>
       <div class="col">
         <button class="btn btn-info btn-raised btn-block"><i class="fa fa-plus mr-2"></i>Add User</button>
+      </div>
+    </div>
+    <div class="row p-4" *ngSwitchCase="'posts'">
+      <div class="ml-auto col-md-8">
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control" name="name" id="name" placeholder="Search for Posts" aria-label="">
+          <span class="input-group-btn">
+      		<button class="btn btn-raised" [ngClass]="getColor(url)" type="button" aria-label="">Search</button>
+        </span>
+        </div>
+      </div>
+    </div>
+    <div class="row p-4" *ngSwitchCase="'categories'">
+      <div class="ml-auto col-md-8">
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control" name="name" id="name" placeholder="Search for Categories" aria-label="">
+          <span class="input-group-btn">
+      		<button class="btn btn-raised" [ngClass]="getColor(url)" type="button" aria-label="">Search</button>
+        </span>
+        </div>
+      </div>
+    </div>
+    <div class="row p-4" *ngSwitchCase="'users'">
+      <div class="ml-auto col-md-8">
+        <div class="input-group">
+          <input
+            type="search"
+            class="form-control" name="name" id="name" placeholder="Search for Users" aria-label="">
+          <span class="input-group-btn">
+      		<button class="btn btn-raised" [ngClass]="getColor(url)" type="button" aria-label="">Search</button>
+        </span>
+        </div>
       </div>
     </div>
   </div>
