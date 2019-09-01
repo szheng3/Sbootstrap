@@ -3,6 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {DashboardComponent} from 'src/app/dashboard/dashboard.component';
 import {LoginComponent} from 'src/app/dashboard/login/login.component';
 import {EditProfileComponent} from 'src/app/dashboard/edit-profile/edit-profile.component';
+import {DetailsComponent} from 'src/app/dashboard/table/details/details.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,10 @@ const routes: Routes = [
       },
       {
         path: 'setting',
+        component: DashboardComponent,
+      },
+      {
+        path: 'details',
         component: DashboardComponent,
       },
     ],

@@ -17,6 +17,7 @@ import { LoginComponent } from './login/login.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileTableComponent } from './table/profile-table/profile-table.component';
 import { SettingComponent } from './table/setting/setting.component';
+import { DetailsComponent } from './table/details/details.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { SettingComponent } from './table/setting/setting.component';
     EditProfileComponent,
     ProfileTableComponent,
     SettingComponent,
+    DetailsComponent,
   ],
   imports: [
     CommonModule,
