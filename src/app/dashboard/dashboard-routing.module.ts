@@ -31,8 +31,12 @@ const routes: Routes = [
       },
       {
         path: 'profile',
-        component: DashboardComponent
-      }
+        component: DashboardComponent,
+      },
+      {
+        path: 'setting',
+        component: DashboardComponent,
+      },
     ],
 
   }];

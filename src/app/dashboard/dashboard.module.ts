@@ -16,6 +16,7 @@ import { UsersTableComponent } from './table/users-table/users-table.component';
 import { LoginComponent } from './login/login.component';
 import { EditProfileComponent } from './edit-profile/edit-profile.component';
 import { ProfileTableComponent } from './table/profile-table/profile-table.component';
+import { SettingComponent } from './table/setting/setting.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ProfileTableComponent } from './table/profile-table/profile-table.compo
     LoginComponent,
     EditProfileComponent,
     ProfileTableComponent,
+    SettingComponent,
   ],
   imports: [
     CommonModule,
