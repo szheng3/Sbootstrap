@@ -1,10 +1,10 @@
-import {AfterViewInit} from '@angular/core';
+import {AfterViewInit, OnInit} from '@angular/core';
 
 declare var $: any;
 declare var CKEDITOR: any;
 
 
-export abstract class LibComponent implements AfterViewInit {
+export abstract class LibComponent implements AfterViewInit,OnInit {
 
 
 
@@ -15,6 +15,10 @@ export abstract class LibComponent implements AfterViewInit {
     $.getScript('/assets/js/looplab.js');
     // CKEDITOR.replace( 'editor' );
 
+
+  }
+
+  ngOnInit(): void {
 
   }
 
