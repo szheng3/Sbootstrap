@@ -1,12 +1,11 @@
-import {AfterContentInit, AfterViewChecked, AfterViewInit, Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router} from '@angular/router';
+import {AfterViewChecked, AfterViewInit, Component, ViewEncapsulation} from '@angular/core';
 
 declare var $: any;
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  // encapsulation: ViewEncapsulation.None,
+  encapsulation: ViewEncapsulation.None,
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements AfterViewInit, AfterViewChecked {
@@ -40,7 +39,6 @@ export class AppComponent implements AfterViewInit, AfterViewChecked {
   // }
 
   ngAfterViewInit(): void {
-    console.log('root');
     // @ts-ignore
     // tslint:disable-next-line:only-arrow-functions
     // $(document).ready(function() {
