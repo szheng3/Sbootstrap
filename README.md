@@ -31,4 +31,4 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-[logo]: https://github.com/szheng3/carol-web/blob/master/design/home%20page-carol%20copy.jpg "Logo Title Text 2"
+[logo]: https://github.com/szheng3/Sbootstrap/blob/master/img/demo.png "Logo Title Text 2"
