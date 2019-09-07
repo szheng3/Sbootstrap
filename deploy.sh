@@ -1,6 +1,6 @@
 git pull
 npm install
-npm run build
+node --max_old_space_size=1096 ./node_modules/@angular/cli/bin/ng build --prod
 docker rm boostrap-angular-app -f | true
 docker rmi boostrap-angular-app | true
 docker build -t boostrap-angular-app --cache-from boostrap-angular-app:latest .
